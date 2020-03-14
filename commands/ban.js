@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     var banChannel = message.guild.channels.find(`name`, "⛔・logs");
     let member = message.mentions.members.first();
 
-    if (!message.member.roles.some(r => ["♛ | Founder", "✘ | Management", "✘ | DC Staff"].includes(r.name)))
+    if (!message.member.roles.some(r => ["✘ | Discord Member"].includes(r.name)))
         return message.reply(":no_entry: | Jij hebt geen toegang tot dit commando!");
     if (!member)
         return message.reply(":no_entry: | Je moet wel een speler kiezen die je wilt verbannen!");

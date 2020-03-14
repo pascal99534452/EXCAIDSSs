@@ -72,7 +72,7 @@ bot.on("guildMemberAdd", member => {
 
 bot.on("guildMemberAdd", member => {
 
-var role = member.guild.roles.find("name", "✘ | Discord member")
+var role = member.guild.roles.find("name", "♛ | Eigenaar")
 
 if (!role) return;
 
